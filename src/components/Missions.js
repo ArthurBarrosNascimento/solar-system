@@ -10,8 +10,13 @@ class Missions extends Component {
         <Title headline="Missões" />
         <div>
           {missions.map(({ name, year, country, destination }) => (
-            // eslint-disable-next-line max-len
-            <MissionCard key={ name } name={ name } year={ year } country={ country } destination={ destination } />
+            <MissionCard
+              key={ name }
+              name={ name }
+              year={ year }
+              country={ country }
+              destination={ destination }
+            />
           ))}
         </div>
       </div>

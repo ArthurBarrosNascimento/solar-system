@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 class PlanetCard extends Component {
@@ -6,9 +6,13 @@ class PlanetCard extends Component {
     const { planetName, planetImage } = this.props;
     return (
       <div data-testid="planet-card">
-        <h3 data-testid="planet-name"> {planetName} </h3>
+        <h3 data-testid="planet-name">
+          {' '}
+          {planetName}
+          {' '}
+        </h3>
 
-        <img src={ planetImage } alt= { `Planeta ${planetName}` } />
+        <img src={ planetImage } alt={ `Planeta ${planetName}` } />
 
       </div>
     );
